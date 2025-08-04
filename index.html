@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Random 5x5 Color Grid</title>
+    <title>Codenames</title>
     <style>
         body {
             font-family: sans-serif;
@@ -29,9 +29,9 @@
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(5, 65px);
-            grid-template-rows: repeat(5, 65px);
-            gap: 14px;
+            grid-template-columns: repeat(5, 110px);
+            grid-template-rows: repeat(5, 110px);
+            gap: 25px;
             margin: 20px auto;
             padding: 4px;
             border-radius: 12px;
@@ -39,8 +39,8 @@
         }
 
         .cell {
-            width: 65px;
-            height: 65px;
+            width: 110px;
+            height: 110px;
             border-radius: 10px;
             animation: popIn 0.5s ease-out;
             transform-origin: center;
@@ -58,8 +58,8 @@
         }
 
         button {
-            padding: 10px 20px;
-            font-size: 16px;
+            padding: 20px 40px;
+            font-size: 30px;
             border-radius: 20px;
             border: none;
             background-color: #666666;
@@ -94,19 +94,19 @@
         }
 
         .slider {
-            width: 40px;
-            height: 20px;
+            width: 80px;
+            height: 40px;
             background-color: #2C5ABD;
-            border-radius: 20px;
-            margin: 0 10px;
+            border-radius: 40px;
+            margin: 0 20px;
             position: relative;
             transition: background-color 0.3s;
         }
 
         .slider::before {
             content: "";
-            width: 18px;
-            height: 18px;
+            width: 36px;
+            height: 36px;
             background-color: white;
             border-radius: 50%;
             position: absolute;
@@ -120,7 +120,7 @@
         }
 
         input:checked + .slider::before {
-            transform: translateX(20px);
+            transform: translateX(40px);
         }
     </style>
 </head>
